@@ -4,7 +4,6 @@ const app=express();
 const mongoose=require("mongoose");
 const Product=require("./models/product.models.js")
 const ProductRoute=require("./routes/product.route.js")
-// const serverless = require('serverless-http');
 
 // we cannot pass json through node js by default
 // so use middleware
@@ -31,4 +30,3 @@ mongoose.connect(process.env.MONGODB_URI)
     
 });
 
-// module.exports.handler = serverless(app);
